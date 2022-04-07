@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Next.js Application In development. Continuous improvement from my github repository. Changes being pushed every day!" />
+        <Header title="Next.js app appplication In development. Continuous improvement from my github repository. Changes being pushed every day!" />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
