@@ -5,13 +5,15 @@ import Footer from '@components/Footer'
 export default function Home() {
   return (
     <div className="container">
+
       <Head>
-        <title>Next.js Site</title>
+        <title>JCT IT Consultant</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Next.js Web App In Development. Continuous improvement from my github repository. Changes being pushed every day!" />
+        <Header title="Continuous improvement from my github repository. 
+        Changes being pushed every day!" />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
