@@ -1,11 +1,28 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import { useState } from 'react'
 
 export default function Home() {
-  return (
-    <div className="container">
+  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton']
+  const [likes, setLikes] = useState(0)
 
+  function handleClick() {
+    setLikes(likes + 1)
+  }
+  return (
+    
+    <div className="container">
+<div>
+      <Header title="Develop. Preview. Ship. 🚀" />
+      <ul>
+        {names.map(name => (
+          <li key={name}>{name}</li>
+        ))}
+      </ul>
+
+      <button onClick={handleClick}>Like ({likes})</button>
+    </div>
       <Head>
         <title>JCT IT Consultant</title>
         <link rel="icon" href="/favicon.ico" />
